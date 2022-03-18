@@ -1,0 +1,94 @@
+@use "global"as *;
+
+.footer {
+    background: #444444;
+    color: #ffffff;
+    margin-top: rem(47);
+    padding: rem(30) 0 rem(80);
+    @include mq(md) {
+        padding: rem(31) 0 rem(29.5);
+    }
+}
+
+.footer__inner {
+    padding: 0 rem(20);
+    @include mq(md) {
+        max-width: rem(900);
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.footer__company-name {
+    font-size: rem(22);
+    font-family: "YuMincho","游明朝";
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.footer__button {
+    margin-top: rem(15);
+    margin-bottom: rem(15);
+}
+
+.footer__button a {
+    position: relative;
+    display: inline-block;
+    max-width: rem(220);
+    width: 100%;
+    border-radius: rem(30);
+    font-size: rem(14);
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding: rem(4.5) rem(12) rem(4.5) rem(15);
+    background: #ffffff;
+    color: #333333;
+}
+
+.footer__button a::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: url(../images/img/icon-ArrowRight.svg) no-repeat center;
+    background-size: contain;
+    width: rem(16);
+    height: rem(16);
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+
+}
+
+.footer__content {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.content__left {
+    max-width: rem(300);
+    width: 100%;
+    @include mq(md) {
+        margin-right: rem(14);
+    }
+}
+
+.content__right {
+    @include mq(md) {
+        margin-top: rem(11);
+    }
+}
+
+.footer__content p,
+.footer__content span {
+    font-size: rem(12);
+    font-family: "YuMincho","游明朝";
+    line-height: 2;
+}
+
+.footer__content span {
+    @include mq(md) {
+        padding-right: rem(12);
+    }
+}

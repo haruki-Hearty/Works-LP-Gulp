@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.price {
+    padding: rem(20) 0;
+    @include mq(md) {
+        padding: rem(34) 0; 
+    }
+}
+
+.price__img {
+    @include mq(md) {
+        max-width: rem(940);
+        width: 100%;
+        margin: 0 auto;
+    }
+}

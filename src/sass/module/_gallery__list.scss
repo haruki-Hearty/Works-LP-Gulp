@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.gallery__list {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: rem(10);
+        grid-row-gap: rem(10);
+        max-width: inherit;
+    }
+}
+
+.gallery__list li {
+    margin-bottom: rem(20);
+    @include mq(md) {
+        margin-bottom: 0;
+    }
+}
+
+.gallery__list li a {
+    display: block;
+}
+
+.gallery__list li a:hover {
+    @include mq(md) {
+        transition: .3s;
+        opacity: .7;
+    }
+}

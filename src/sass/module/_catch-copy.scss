@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.catch-copy {
+    padding: rem(50) 0 rem(20);
+    @include mq(md) {
+        padding: rem(71) 0 rem(42);
+    }
+}

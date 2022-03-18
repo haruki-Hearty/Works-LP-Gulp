@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.gallery {
+    padding: rem(20) 0;
+    @include mq(md) {
+        padding: rem(38) 0;
+    }
+}

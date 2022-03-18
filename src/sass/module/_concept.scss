@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.concept {
+    padding: rem(20) 0;
+    @include mq(md) {
+        padding: rem(35) 0 rem(40);
+    }
+}

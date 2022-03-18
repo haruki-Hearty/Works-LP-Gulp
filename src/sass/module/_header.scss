@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.header {
+    padding: rem(50) 0;
+    background: url(../images/img/bg-MV.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .header__inner {
+    padding: 0 rem(15);
+    @include mq(md) {
+      max-width: rem(1210);//必要？
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+
+  .header__logo {
+    max-width: rem(253);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    @include mq(md) {
+      margin-left: 46px;
+    }
+  }
+
+  .header__link {
+    display: inline-block;
+  }
+
+  .header__button {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    @include mq(md) {
+      position: inherit;
+      max-width: rem(196);
+      margin-top: rem(3);
+      margin-left: auto;
+    }
+  }
+
+  .header__button a {
+    display: block;
+    padding: rem(16) 0;
+    font-size: rem(16);
+    font-weight: 500;
+    color: $white;
+    background: linear-gradient(#9a4100 0%, #5f3700 100%);
+    text-align: center;
+    @include mq(md) {
+      padding: rem(11.5) 0;
+    }
+  }
+
+  //header button から
